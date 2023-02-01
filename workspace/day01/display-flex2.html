@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        div {
+            border: 1.5px solid black;
+        }
+
+        div.wrap {
+            display: flex;
+        }
+
+        #container, div.wrap {
+            border: none;
+        }
+
+        div.wrap div {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="wrap">
+            <div>1열</div>
+            <div>2열</div>
+            <div>3열</div>
+            <div>4열</div>
+        </div>
+        <div class="wrap">
+            <div>1열</div>
+            <div>2열</div>
+            <div>3열</div>
+            <div>4열</div>
+        </div>
+        <div class="wrap">
+            <div>1열</div>
+            <div>2열</div>
+            <div>3열</div>
+            <div>4열</div>
+        </div>
+    </div>
+</body>
+</html>

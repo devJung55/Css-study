@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display-table 실습</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        div.first-wrap {
+            display: table;
+            width: 1280px;
+        }
+
+        div.row {
+            display: table-row;
+        }
+
+        div.col {
+            display: table-cell;
+        }
+
+        div.second-wrap {
+            display: table;
+            width: 1280px;
+        }
+
+        div.one-row {
+            display: table-row;
+            width: 100%; /* 1280px */
+        }
+
+        div.nain-col {
+            display: table-cell;
+            width: 10%; /* 128px */
+        }
+
+        div.nain-col img {
+            width: 100%; /* 128px */
+        }
+
+        div.row, div.col img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 9개의 이미지를 3행 3열로 출력 -->
+    <!-- 9개의 이미지를 1행으로 출력 -->
+    <div class="first-wrap">
+        <div class="row">
+            <div class="col"><img src="img1.jpg"></div>
+            <div class="col"><img src="img2.jpg"></div>
+            <div class="col"><img src="img3.jpg"></div>
+        </div>
+        <div class="row">
+            <div class="col"><img src="img1.jpg"></div>
+            <div class="col"><img src="img2.jpg"></div>
+            <div class="col"><img src="img3.jpg"></div>
+        </div>
+        <div class="row">
+            <div class="col"><img src="img1.jpg"></div>
+            <div class="col"><img src="img2.jpg"></div>
+            <div class="col"><img src="img3.jpg"></div>
+        </div>
+    </div>
+    <div class="second-wrap">
+        <div class="one-row">
+            <div class="nain-col"><img src="img1.jpg"></div>
+            <div class="nain-col"><img src="img2.jpg"></div>
+            <div class="nain-col"><img src="img3.jpg"></div>
+            <div class="nain-col"><img src="img1.jpg"></div>
+            <div class="nain-col"><img src="img2.jpg"></div>
+            <div class="nain-col"><img src="img3.jpg"></div>
+            <div class="nain-col"><img src="img1.jpg"></div>
+            <div class="nain-col"><img src="img2.jpg"></div>
+            <div class="nain-col"><img src="img3.jpg"></div>
+        </div>
+    </div>
+</body>
+</html>
