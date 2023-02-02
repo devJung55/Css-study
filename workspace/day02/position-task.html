@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 실습</title>
+    <style>
+        div.img {
+            background-image: url("http://koreaitacademy.com/renewal2021/img/tch/teacher007.png");
+            background-size: 100%;
+            background-position: center;
+            width: 220px;
+            height: 315px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        div.cigar img {
+            transform:rotate(180deg);
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            bottom: 20px;
+            left: 82px;
+        }
+        
+        div.sunglass img {
+            width: 70px;
+            height: 50px;
+            position: absolute;
+            top: 75px;
+            right: 99px;
+        }
+    </style>
+</head>
+<body>
+    <div class="img">
+        <div class="cigar">
+            <img src="cigar.png">
+        </div>
+        <div class="sunglass">
+            <img src="sunglass.png">
+        </div>
+    </div>
+</body>
+</html>
