@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'DINPro-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro-Light'), url('DINPro-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DINPro-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro-Regular'), url('DINPro-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DINPro-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro-Medium'), url('DINPro-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'DINPro-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DINPro-Bold'), url('DINPro-Bold.woff') format('woff');
+}
+
+body {
+    background-color: #f3f7fa;
+    font-family: 'DINPro-Light';
+    font-size: 20px;
+    color: grey;
+    letter-spacing: -1px;
+    text-align: center;
+    padding: 45px 0 0;
+}
+
+#wrap {
+    display: table;
+    width: 1174px;
+    margin: 0 auto;
+    border-spacing: 6px;
+}
+
+div.row {
+    display: table-row;
+}
+
+div.cell {
+    width: 230px;
+    display: table-cell;
+    background-color: white;
+    box-shadow: 0 1px 0 0 rgb(0 0 0 / 8%);
+}
+
+p.myshop-title::before {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    background-image: url("https://www.sta1.com/_nuxt/img/icon-myshop@3x.00de977.png");
+    background-size: cover; 
+}
+
+div.myshop {
+    padding-bottom: 17px;
+    cursor: pointer;
+}
+
+.myshop-title {
+    padding: 45px 0 0;
+    margin: 0;
+}
+
+.myshop-title strong {
+    font-family: 'DINPro-Bold';
+}
+
+.count {
+    display: flex;
+    color: #909090;
+    margin-top: 30px;
+}
+
+.count span {
+    position: relative;
+    flex: 1;
+    font-family: 'DINPro-Regular';
+    font-size: 14px;
+}
+
+.count span em {
+    display: block;
+    font-family: sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    padding-top: 20px;
+}
+
+.count span:nth-child(2) em {
+    color: #ff6b00;
+}
+
+.count span:first-child::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 60px;
+    background-color: #edeff0;
+    position: absolute;
+    right: -1px;
+    top: 0;
+}
+
+div.item {
+    position: relative;
+}
+
+em.rank {
+    font-family: 'DINPro-Regular';
+    position: absolute;
+    color: #ff6b00;
+    top: 12px;
+    left: 12px;
+    font-style: normal;
+    font-size: 12px;
+}
+
+div.info {
+    position: absolute;
+    left: 50%;
+    top: 45px;
+    color: #909090;
+    transform: translate(-50%);
+}
+
+div.img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+div.img img {
+    width: 100%;
+    height: 100%;
+}
+
+h2.shop-name {
+    padding: 19px 0 15px;
+    color: #303030;
+    font-size: 15px;
+    overflow: hidden;
+    width: 85%;
+    margin: 0 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+div.info p {
+    margin: 0;
+    padding: 1px 0;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+div.buttons {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid #edeff0;
+}
+
+div.buttons a.button {
+    text-decoration: none;
+    flex: 1;
+    font-size: 11px;
+    color: #909090;
+    line-height: 40px;
+    text-align: center;
+    border-right: 1px solid #edeff0;
+}
+
+div.buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 11px;
+    color: #909090;
+    line-height: 40px;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+div.buttons button p.button-text {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 11px;
+    color: #909090;
+    line-height: 40px;
+    text-align: center;
+}
+
+div.buttons button em.button-icon {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-left: 7px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE5JREFUeNrs1jEKACAMQ9FGvP8ZclNdxbEWUfiZOpUHGVrZjoOMZVZ2SYsHAgIECBAgQHyJ6Ns5rjrr1JGuQ0UV8FmBAAECBAgQ1zMFGABYogYlJB84mgAAAABJRU5ErkJggg==");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
